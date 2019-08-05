@@ -66,14 +66,14 @@
 <meta property="og:site_name" content="悠哉码农的日常">
 <meta property="og:description" content="前言最近博主在做项目的时候遇到需要实现A窗体刷新B窗体的功能，比如从A窗体中点击登录按钮弹出B窗体的登录界面，如果用户登录成功则自动关闭B窗体，A窗体显示用户昵称；当用户关闭登录界面时，什么都不改变。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006Xmmmggy1g5nzxwk8acj30dl0bzwef.jpg">
-<meta property="og:image" content="https://ws3.sinaimg.cn/large/006Xmmmggy1g5o01tt6uyj30nt0c80sv.jpg">
-<meta property="og:image" content="https://ws3.sinaimg.cn/large/006Xmmmggy1g5o03kt8zhj30dl0bzglk.jpg">
-<meta property="og:updated_time" content="2019-08-04T14:40:25.571Z">
+<meta property="og:image" content="http://yoursite.com/2019/08/02/winform实现A窗体刷新B窗体/1.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/02/winform实现A窗体刷新B窗体/2.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/02/winform实现A窗体刷新B窗体/3.png">
+<meta property="og:updated_time" content="2019-08-05T06:32:18.019Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="winform实现B窗体刷新A窗体（子窗体刷新父窗体）">
 <meta name="twitter:description" content="前言最近博主在做项目的时候遇到需要实现A窗体刷新B窗体的功能，比如从A窗体中点击登录按钮弹出B窗体的登录界面，如果用户登录成功则自动关闭B窗体，A窗体显示用户昵称；当用户关闭登录界面时，什么都不改变。">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006Xmmmggy1g5nzxwk8acj30dl0bzwef.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/02/winform实现A窗体刷新B窗体/1.png">
   <link rel="canonical" href="http://yoursite.com/2019/08/02/winform实现A窗体刷新B窗体/">
 
 
@@ -272,7 +272,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-04 22:40:25" itemprop="dateModified" datetime="2019-08-04T22:40:25+08:00">2019-08-04</time>
+                <time title="修改时间：2019-08-05 14:32:18" itemprop="dateModified" datetime="2019-08-05T14:32:18+08:00">2019-08-05</time>
               </span>
             
           
@@ -300,8 +300,8 @@
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><font>最近博主在做项目的时候遇到需要实现A窗体刷新B窗体的功能，比如从A窗体中点击登录按钮弹出B窗体的登录界面，如果用户登录成功则自动关闭B窗体，A窗体显示用户昵称；当用户关闭登录界面时，什么都不改变。</font></p>
 <a id="more"></a>
 <h2 id="效果流程"><a href="#效果流程" class="headerlink" title="效果流程"></a>效果流程</h2><ol>
-<li>在A窗体中当用户点击登录，弹出B窗体登录界面，如果登录成功，则把A窗体用户名改成用户在B窗体输入的用户名<br><img src="https://ws1.sinaimg.cn/large/006Xmmmggy1g5nzxwk8acj30dl0bzwef.jpg" alt><br><img src="https://ws3.sinaimg.cn/large/006Xmmmggy1g5o01tt6uyj30nt0c80sv.jpg" alt></li>
-<li>用户输入账户后，把账户传到A窗体中<br><img src="https://ws3.sinaimg.cn/large/006Xmmmggy1g5o03kt8zhj30dl0bzglk.jpg" alt></li>
+<li>在A窗体中当用户点击登录，弹出B窗体登录界面，如果登录成功，则把A窗体用户名改成用户在B窗体输入的用户名<br><img src="/2019/08/02/winform实现A窗体刷新B窗体/1.png" alt><br><img src="/2019/08/02/winform实现A窗体刷新B窗体/2.png" alt></li>
+<li>用户输入账户后，把账户传到A窗体中<br><img src="/2019/08/02/winform实现A窗体刷新B窗体/3.png" alt></li>
 </ol>
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h4 id="实现窗体间的传值"><a href="#实现窗体间的传值" class="headerlink" title="实现窗体间的传值"></a>实现窗体间的传值</h4><ol>
 <li><p>重载A窗体中的构造方法，并定义一个string类型的全局变量，注意：必须加static关键字，否则不能传值</p>
